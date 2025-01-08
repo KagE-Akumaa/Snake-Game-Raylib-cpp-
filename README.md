@@ -45,27 +45,31 @@ git clone https://github.com/KagE-Akumaa/Snake-Game-Raylib-cpp-.git
 cd Snake-Game-Raylib-cpp-
 ```
 
-### 3. Build the Game
+### 3. Run the Game
 
-- If a `Makefile` is provided, simply run:
+- If you are on Windows and the `main.exe` file is provided, you can simply double-click on the `main.exe` file to run the game.
+  - **Note**: The `lib` folder contains the required Raylib DLL files. Ensure the `main.exe` file and the `lib` folder are in the same directory for the game to run properly.
+- Otherwise, you can build and run the game manually:
+
+  #### Build the Game:
+
+  - If a `Makefile` is provided, simply run:
+
+    ```bash
+    make
+    ```
+
+  - Otherwise, compile manually:
+
+    ```bash
+    g++ -o snake_game main.cpp -lraylib
+    ```
+
+  #### Run the Game:
 
   ```bash
-  make
+  ./snake_game
   ```
-
-- Otherwise, compile manually:
-
-  ```bash
-  g++ -o snake_game main.cpp -lraylib
-  ```
-
-Ensure that the Raylib library is installed and properly linked during compilation.
-
-### 4. Run the Game
-
-```bash
-./snake_game
-```
 
 ---
 
@@ -138,4 +142,3 @@ Some ideas for extending the game:
    - Inspired by the classic Snake games played on older mobile devices.
 
 ---
-
